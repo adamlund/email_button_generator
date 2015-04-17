@@ -1,0 +1,44 @@
+@charset "utf-8"
+
+@import "lib/all"
+@import "modules/all"
+@import "polyfills/all"
+
+@import "print"
+
+@mixin vertical-align
+  position: relative
+  top: 50%
+  -webkit-transform: translateY(-50%)
+  -ms-transform: translateY(-50%)
+  transform: translateY(-50%)
+
+.edit-row
+  -webkit-transform-style: preserve-3d
+  -moz-transform-style: preserve-3d
+  transform-style: preserve-3d
+  height: 60px
+  width: 400px
+
+  .edit-container
+    @include vertical-align
+
+  .edit-input
+    width: 150px
+    height: 30px
+    display: inline-block
+    text-align: left
+
+  .edit-label
+    width: 150px
+    display: inline-block
+    text-align: left
+
+.demo-zone
+  padding: 30px
+  border: solid 2px #ddd
+  background-color: #efefef
+
+.feedback
+  padding: 20px
+  font-size: 20px

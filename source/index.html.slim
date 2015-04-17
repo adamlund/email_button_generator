@@ -1,0 +1,74 @@
+---
+title: "Email Button Generator"
+---
+
+h1 Email Button Generator
+= link_to "Return to Tools Library", "../"
+
+div id="render_preview" class="demo-zone"
+
+.container
+  .col-md-4
+    .edit-row
+      .edit-container
+        .edit-label
+          label for="forecolor" Text Color
+        .edit-input
+          input type="color" value="#ffffff" name="forecolor" size="7" id="forecolor"
+    .edit-row
+      .edit-container
+        .edit-label
+          label for="backcolor" Background color
+        .edit-input
+          input type="color" value="#4a4a4a" name="backcolor" size="7" id="backcolor"
+
+    .edit-row
+      .edit-container
+        .edit-label
+          label for="background_image" Background image
+        .edit-input
+          input type="url" value="" name="background_image" size="25" maxlength="2000" id="background_image"
+
+    .edit-row
+      .edit-container
+        .edit-label
+          label for="height" Height
+        .edit-input
+          input type="number" value="30" name="height" size="3" maxlength="3" id="height"
+    .edit-row
+      .edit-container
+        .edit-label
+          label for="width" Width
+        .edit-input
+          input type="number" value="100" name="width" size="3" maxlength="3" id="width"
+
+    .edit-row
+      .edit-container
+        .edit-label
+          label for="buttontext" Button Text
+        .edit-input
+          input type="text" value="Loading Settings..." name="buttontext" size="25" maxlength="250" id="buttontext"
+
+    .edit-row
+      .edit-container
+        .edit-label
+          label for="fontsize" Font Size
+        .edit-input
+          input type="number" value="16" name="fontsize" size="2" min="3" max="72" maxlength="2" id="fontsize"
+
+    .edit-row
+      .edit-container
+        .edit-label
+          label for="linkurl" Link URL
+        .edit-input
+          input type="text" value="Loading Settings..." name="linkurl" size="25" maxlength="2000" id="linkurl"
+
+    .edit-row
+      .edit-container
+        button id="gen_button" class="btn btn-primary" Generate
+
+  .col-md-8
+    h3 Copy and Paste this Code
+    textarea rows="13" cols="50" id="code_preview"
+
+    div id="result" class="feedback" Result should be here
