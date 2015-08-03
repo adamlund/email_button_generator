@@ -26,6 +26,8 @@ var std_t =
     width: "250",
     fontsize: "16",
     mso_fontsize: "18",
+    borderradius: "6",
+    align: "center", 
     linkurl: "http://www.govdelivery.com",
     backimage: null
   }, template, compiled_template;
